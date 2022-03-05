@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&display=swap');
+
+$text-green: #B2D235;
+$text-grey: #505353;
+$text-green-dark: #90AB26;
+$text-heading: #11114E;
+$header-shadow: linear-gradient(180deg, #FFFBFB 87.5%, #E7E9EE 100%);
+$box-shadow:0 5px 10px rgba(0,0,0,.1);
+
+*{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+    outline: none;border: none;
+    text-decoration: none !important;
+    text-transform: capitalize;
+    font-family: 'Nunito', sans-serif;
+}
+
+html {
+    scroll-padding-top: 60px;
+}
