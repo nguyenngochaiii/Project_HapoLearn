@@ -20,20 +20,21 @@
 
     <!-- custom css file link -->
     <link rel="stylesheet" href="./public/css/app.css">
+
 </head>
 
 <body>
 
     <!-- header section starts -->
-    <header class="fixed-top py-3" id="header">
+    <header class="header fixed-top py-3" id="header">
         <div class="container-fluid d-flex align-items-center justify-content-between container-header">
-            <div id="menu-bar" class="fas fa-bars menu-bar d-none"></div>
+            <div class="fas fa-bars menu-bar d-none"></div>
             <a href="#" class="logo"></a>
             <nav class="nav">
                 <a href="#home">home</a>
-                <a href="#all_course" class="course-color">all course</a>
-                <a href="#login_register" class="login-register-btn">login/register</a>
-                <a href="#profile" class="full-vh">profile</a>
+                <a href="#course" class="course-color">all course</a>
+                <a href="#login_register">login/register</a>
+                <a href="#profile" class="full-mb">profile</a>
             </nav>
         </div>
     </header>
@@ -48,8 +49,8 @@
                     <span>at HapoLearn</span>
                     <img src="./public/image/logo_small.png" alt="logo">
                     <span> !</span>
-                    <p>Interactive lessons, "on-the-on"<br>practice, peer support.</p>
-                    <a href="#" class="btn">Start Learning Now!</a>
+                    <p class="content-title-second">Interactive lessons, "on-the-on"<br>practice, peer support.</p>
+                    <a href="#" class="btn-start">Start Learning Now!</a>
                 </div>
             </div>
             <div class="box-shadow"></div>
@@ -124,7 +125,7 @@
         </form>
     </div>
     <!-- register form ends -->
-  
+
     <!-- courses section starts -->
     <section class="courses" id="course">
         <div class="container-fluid">
@@ -163,7 +164,7 @@
                     </div>
                 </div>
             </div>
-            <h1 class="heading">Other Courses</h1>
+            <p class="heading">Other Courses</p>
             <div class="d-flex cards-container justify-content-center">
                 <div class="card-items text-center">
                     <div class="card-header css-bg">
@@ -527,55 +528,55 @@
     <script src="./js/app.js"></script>
 
     <!-- slick js file link -->
-        <script
-            type="text/javascript"
-            src="//code.jquery.com/jquery-1.11.0.min.js"
-        ></script>
-        <script
-            type="text/javascript"
-            src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
-        ></script>
-        <script
-            type="text/javascript"
-            src="./js/slick-1.8.1/slick/slick.min.js"
-        ></script>
+    <script
+        type="text/javascript"
+        src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+        type="text/javascript"
+        src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+        type="text/javascript"
+        src="./js/slick-1.8.1/slick/slick.min.js"
+    ></script>
 
-        <script type="text/javascript">
-            $(".slider").slick({
-                dots: false,
-                infinite: false,
-                speed: 300,
-                slidesToShow: 2,
-                slidesToScroll: 2,
-                responsive: [
-                    {
-                        breakpoint: 1024,
-                        settings: {
-                            slidesToShow: 1,
-                            slidesToScroll: 3,
-                            infinite: true,
-                            dots: false
-                        }
-                    },
-                    {
-                        breakpoint: 600,
-                        settings: {
-                            slidesToShow: 1,
-                            slidesToScroll: 2
-                        }
-                    },
-                    {
-                        breakpoint: 480,
-                        settings: {
-                            slidesToShow: 1,
-                            slidesToScroll: 1
-                        }
+    <script type="text/javascript">
+        $(".slider").slick({
+            dots: false,
+            infinite: false,
+            speed: 300,
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 3,
+                        infinite: true,
+                        dots: false
                     }
-                ]
-            });
-        </script>
-        <!-- custom js file link -->
-        <script src="./js/app.js"></script>
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 2
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
+        });
+    </script>
+    <!-- custom js file link -->
+    <script src="./js/app.js"></script>
 </body>
 
 </html>
