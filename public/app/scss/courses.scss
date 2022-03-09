@@ -62,16 +62,16 @@
     .card-body {
       padding-bottom: 4rem;
 
-      .card-title {
-        font-size: 1.5rem;
-        color: $text-green;
-      }
-
       .card-text {
         font-size: .7rem;
         color: $text-grey;
         padding: 1rem .5rem;
       }
+
+      .card-title {
+        font-size: 1.5rem;
+        color: $text-green;
+      }  
 
       .btn {
         font-size: 1rem;

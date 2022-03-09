@@ -13,16 +13,16 @@
 
     .content {
       margin-left: 2rem;
-
-      .content-title {
-        font-size: 3rem;
-        color: $text-heading;
-      }
-
+      
       span {
         font-size: 3rem;
         color: $text-heading;
         font-weight: 800;
+      }
+
+      .content-title {
+        font-size: 3rem;
+        color: $text-heading;
       }
 
       img {
