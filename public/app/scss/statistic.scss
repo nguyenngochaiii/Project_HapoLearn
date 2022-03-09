@@ -1,0 +1,54 @@
+.statistic {
+  padding: 5rem;
+
+  .statistic-box .box-down {
+
+    .box {
+
+      .box-title {
+        font-size: 3.25rem;
+        line-height: 74px;
+        color: $text-grey;
+      }
+
+      .nub {
+        font-size: 3.25rem;
+        line-height: 74px;
+        color: $text-green;
+      }
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+
+  .statistic {
+
+    .statistic-box .box-down {
+      flex-direction: column;
+      align-items: center;
+    }
+
+  }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+
+  .statistic {
+
+    .statistic-box .box-down {
+
+      .box {
+
+        .box-title {
+          font-size: calc(1vw + 1.75rem);
+        }
+
+        .nub {
+          font-size: calc(1vw + 1.75rem);
+        }
+      }
+    }
+  }
+}

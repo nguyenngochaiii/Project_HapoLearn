@@ -14,15 +14,14 @@
     .content {
       margin-left: 2rem;
 
-      h2 {
-        font-size: 2.125rem;
-        color: $text-heading;
-      }
-
       span {
-        font-size: 2.125rem;
+        font-size: 3rem;
         color: $text-heading;
         font-weight: 800;
+      }
+      .content-title {
+        font-size: 3rem;
+        color: $text-heading;
       }
 
       img {
@@ -31,7 +30,7 @@
         margin-bottom: 20px;
       }
 
-      p {
+      .content-title-second {
         font-size: 1rem;
         color: $text-grey;
       }
@@ -64,7 +63,6 @@
   }
 }
 
-
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) {
   .banner {
@@ -91,7 +89,7 @@
       background-position: center;
 
       .content {
-        h2 {
+        .content-title {
           font-size: calc(1vw + 1rem);
         }
 
@@ -105,7 +103,7 @@
           margin-bottom: 10px;
         }
 
-        p {
+        .content-title-second {
           font-size: calc(.5vw + .5rem);
         }
 
