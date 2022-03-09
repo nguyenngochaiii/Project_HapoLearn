@@ -7,15 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HapoLearn</title>
 
-    <!-- custom css file link -->
-    <link rel="stylesheet" href="./public/css/app.css">
-
     <!-- font awesome cdn link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
     <!-- Bootstrap cdn link -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
         integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="./public/css/app.css">
 
 </head>
 
@@ -25,12 +25,14 @@
     <header class="header fixed-top py-3" id="header">
         <div class="container-fluid d-flex align-items-center justify-content-between container-header">
             <div class="fas fa-bars menu-bar d-none"></div>
-            <a href="#" class="logo"></a>
+            <a href="#" class="logo">
+                <img src="./public/image/logo.png" alt="logo">
+            </a>
             <nav class="nav">
                 <a href="#home">home</a>
                 <a href="#course" class="course-color">all course</a>
                 <a href="#login_register">login/register</a>
-                <a href="#profile">profile</a>
+                <a href="#profile" class="full-mb">profile</a>
             </nav>
         </div>
     </header>
@@ -46,7 +48,7 @@
                     <img src="./public/image/logo_small.png" alt="logo">
                     <span> !</span>
                     <p class="content-title-second">Interactive lessons, "on-the-on"<br>practice, peer support.</p>
-                    <a href="#" class="btn">Start Learning Now!</a>
+                    <a href="#" class="btn-start">Start Learning Now!</a>
                 </div>
             </div>
             <div class="box-shadow"></div>

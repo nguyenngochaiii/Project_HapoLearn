@@ -10,12 +10,13 @@ header {
   }
 
   .logo {
-    background-image: url("https://s3-alpha-sig.figma.com/img/b54b/0783/c6b361415f1d41a2d67d3a976403cf6d?Expires=1647216000&Signature=F5FDRw8CDycWViysaM6ky1aVAhkrh0cgvXrI1vhnUk8-Gh04HZz6kgzrDUf858s2GPp~MTKWCOzYkdPJ44ILphuTXmd2fwQQVTKUB6KY0K5rIzepttLZL4IWaRFIm1f8~FvFy4QvSlTBdvuZBY0Ab6Gc9FFPSZpgTZM6Jq2JU4vq4bTINrhUpWpZY14-CUPDOclB5b9C9rv5V3hcGWFdU0n47RwPOQKl9d~J6JKz8hRI2qJJXzJLPBd7bGZAcYu14xiwSsL3ZEGA1XSRgzxnohrrgRZ~P4UySuT-hwNiNiUPeYjTwyPZlg9VWkVVp6x-gmz579YjsqBQRrOq28BV6Q__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA");
-    background-size: 340px 70px;
     width: 340px;
     height: 70px;
-    display: block;
     margin-left: 2rem;
+
+    img{
+      width: 100%;
+    }
   }
 
   .nav a {
@@ -106,6 +107,10 @@ header {
 
       .fa-times {
         transform: rotate(180deg);
+      }
+
+      .full-mb{
+        height: 100vh;
       }
     }
   }

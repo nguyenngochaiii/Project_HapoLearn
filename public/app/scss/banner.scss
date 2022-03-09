@@ -36,7 +36,7 @@
         color: $text-grey;
       }
   
-      .btn {
+      .btn-start {
         background: $text-green;
         color: #fff;
         border-radius: 35px;
@@ -62,52 +62,48 @@
 }
 
 @media (max-width: 767.98px) {
-  .banner {
-    .main-bg {
-      position: relative;
-      background-image: url("https://s3-alpha-sig.figma.com/img/866b/63ac/1e9eca12ac0612fb7b885045132e08f8?Expires=1647820800&Signature=NhlkpIpR6qN9L7m7-pfHBq5CIZ2ouCnC5HnoqWJpGwg2X3bxKw0PwdqbD6pOVC2bkh1EZhALlq6bRzlzhi-PAkP-A2GCTYJW-LwDXss3DDreysAOAoHToqPOAvt-h6bH13-2kYc4b9gPVUbWBAZ5x-cM0-daiEht7K5elJyh26MXyyqN~lVcQKoZCkW4fk9PQZqALMNW8fAXsCFJLS3rc17Wb~Y-OJKdvCRZBZtWQCzO~7xh~moTdznh1VdqxF2U-gXam~PNA~Lxf1ixzgktPPOeX1DuZmEwbcbjjDpDdEIjApJ4stSg-KicKlNrx9Fbe5PfNY0~QXmcBKi0pCwbgA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA");
-      background-size: 100% 350px;
-      background-repeat: no-repeat;
-      background-position: center;
+  .banner .main-bg {
+    position: relative;
+    background-image: url("https://s3-alpha-sig.figma.com/img/866b/63ac/1e9eca12ac0612fb7b885045132e08f8?Expires=1647820800&Signature=NhlkpIpR6qN9L7m7-pfHBq5CIZ2ouCnC5HnoqWJpGwg2X3bxKw0PwdqbD6pOVC2bkh1EZhALlq6bRzlzhi-PAkP-A2GCTYJW-LwDXss3DDreysAOAoHToqPOAvt-h6bH13-2kYc4b9gPVUbWBAZ5x-cM0-daiEht7K5elJyh26MXyyqN~lVcQKoZCkW4fk9PQZqALMNW8fAXsCFJLS3rc17Wb~Y-OJKdvCRZBZtWQCzO~7xh~moTdznh1VdqxF2U-gXam~PNA~Lxf1ixzgktPPOeX1DuZmEwbcbjjDpDdEIjApJ4stSg-KicKlNrx9Fbe5PfNY0~QXmcBKi0pCwbgA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA");
+    background-size: 100% 350px;
+    background-repeat: no-repeat;
+    background-position: center;
 
-      .content{
+    .content {
 
-        .content-title {
-          font-size: calc(1vw + 1rem);
-        }
+      .content-title {
+        font-size: calc(1vw + 1rem);
+      }
 
-        span {
-          font-size: calc(1vw + 1rem);
-        }
-  
-        img {
-          width: 39px;
-          height: 34px;
-          margin-bottom: 10px;
-        }
-  
-        .content-title-second {
-          font-size: calc(.5vw + .5rem);
-        }
-  
-        .btn {
-          font-size: calc(.5vw + .5rem);
-        }
+      span {
+        font-size: calc(1vw + 1rem);
+      }
+
+      img {
+        width: 39px;
+        height: 34px;
+        margin-bottom: 10px;
+      }
+
+      .content-title-second {
+        font-size: calc(.5vw + .5rem);
+      }
+
+      .btn {
+        font-size: calc(.5vw + .5rem);
       }
     }
   }
 }
 
 @media (max-width: 575.98px) {
-  .banner {
-    .main-bg {
-      height: 50vh;
-      background-position: top !important;
+  .banner .main-bg {
+    height: 50vh;
+    background-position: top !important;
 
-      .content {
-        padding-top: 10rem;
-        text-align: center;
-      }
+    .content {
+      padding-top: 10rem;
+      text-align: center;
     }
   }
 }
