@@ -62,12 +62,12 @@
     .card-body {
       padding-bottom: 4rem;
 
-      h5 {
+      .card-title {
         font-size: 1.5rem;
         color: $text-green;
       }
 
-      p {
+      .card-text {
         font-size: .7rem;
         color: $text-grey;
         padding: 1rem .5rem;
@@ -85,11 +85,11 @@
     }
   }
 
-  h3 {
+  .heading-second {
     font-size: 35px;
     line-height: 49px;
     font-weight: 600;
-    margin-top: 60px;
+    margin: 60px;
     color: $text-green-dark;
     text-align: center;
   }
@@ -133,11 +133,11 @@
 
       .card-body {
 
-        h5 {
+        .card-title {
           font-size: calc(1vw + .7rem);
         }
 
-        p {
+        .card-text {
           font-size: calc(1vw + .2rem);
         }
 
@@ -148,7 +148,7 @@
       }
     }
 
-    h3 {
+    .heading-second {
       font-size: calc(.5vw + 1rem);
     }
   }
