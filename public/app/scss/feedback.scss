@@ -14,7 +14,6 @@
   .details {
 
     .details-up {
-      //background: #fff;
       border: 0.5px solid #E2E2E2;
       border-radius: 10px;
       gap: 1rem;
@@ -71,44 +70,27 @@
   }
 }
 
-@media (max-width: 575.98px) {}
-
-// Small devices (landscape phones, less than 768px)
 @media (max-width: 767.98px) {
   .feedback {
 
-    .title {
+    .title .name {
+      width: 500px;
+      font-size: calc(1vw + .5rem);
+    }
+    
+    .details {
 
-      .name {
-        width: 500px;
+      .details-down .profile .name {
+        font-size: calc(1vw + .7rem);
+      }
+
+      p {
         font-size: calc(1vw + .5rem);
       }
 
+      .star {
+        font-size: calc(1vw + .5rem);
+      }    
     }
-
-    .details {
-
-      .details-down {
-
-        .profile {
-
-          .name {
-            font-size: calc(1vw + .7rem);
-          }
-
-          p {
-            font-size: calc(1vw + .5rem);
-          }
-
-          .star {
-            font-size: calc(1vw + .5rem);
-          }
-        }
-
-      }
-
-    }
-
   }
-
 }

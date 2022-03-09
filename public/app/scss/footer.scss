@@ -7,29 +7,25 @@
   .footer-up {
     height: 300px;
   
-    .first{
-
-      .logo{
-        width: 300px;
-        height: 60px;
-        
-        img{
-          width: 100%;
-        }
+    .ft-left .first .logo{
+      width: 300px;
+      height: 60px;
+      
+      img{
+        width: 100%;
       }
-
-      p{
-        margin-left: 3rem;
-        font-size: 1rem;
-        line-height: 25px;
-        padding: 1rem;
-        color: #fff;
-      }
-
     }
 
-    .second{
+    .ft-left .first p{
+      margin-left: 3rem;
+      font-size: 1rem;
+      line-height: 25px;
+      padding: 1rem;
+      color: #fff;
+    }
 
+    .ft-left .second{
+      gap: 3rem;
       a{
         color: #fff;
         font-size: 1rem;
@@ -38,64 +34,100 @@
       }
     }
 
-    .third{
-      position: relative;
+    .ft-icons{
+      height: 50px;
+      gap: 1rem;
+      top: 40%;
+    }
 
-      .icon{
-        
-        a{
-          display: block;
-          font-size: 1rem;
-          color: #fff;
-          text-decoration: underline !important;
-        }
+    .ft-icons .icon{
+
+      i{
+        width: 50px;
+        height: 50px;
+        background: #fff;
+        border-radius: 999px;
       }
 
-      .i-face{
-
-        i{
-          width: 50px;
-          height: 50px;
-          background: #fff;
-          border-radius: 999px;
-        }
-
-        &:hover{
-          position: absolute;
-          a{
-            position: absolute;
-            display: block;
-          }
-        }
+      a{
+        display: none;
+        font-size: 1rem;
+        text-decoration: underline;
+        color: #fff;
       }
-
-      .i-phone{
-
-        &:hover{
-          a{
-            
-            display: block;
-          }
-        }
+    }
+    
+    .i-face:hover{
+      a{
+        display: block;
       }
+    }
 
-      .i-email{
-
-        &:hover{
-          a{
-            
-            display: block;
-          }
-        }
+    .i-phone:hover{
+      a{
+        display: block;
       }
-      
+    }
+
+    .i-email:hover{
+      a{
+        display: block;
+      }
     }
   }
-
   .footer-down {
 
     background: #454545;
     color: #fff;
     font-size: .8rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .footer .footer-up .ft-left {
+
+    .first .logo{
+
+      width: 170px;
+      height: 35px;
+    }
+
+    .first p{
+
+      font-size: calc(1vw + .5rem);
+      margin: 0;
+    }
+
+    .second a{
+      font-size: calc(1vw + .5rem);
+    }
+  }
+
+  .footer .footer-up .ft-icons {
+    gap: .5rem;
+
+    .icon{
+
+      i{
+        width: 40px;
+        height: 40px;
+        min-width: 30px;
+        min-height: 30px;
+      }
+  
+      a{
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .ft-left{
+    flex-direction: column-reverse;
+  }
+
+  .footer .footer-up .ft-icons{
+    position: absolute;
   }
 }
