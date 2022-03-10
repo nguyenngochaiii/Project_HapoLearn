@@ -1,21 +1,19 @@
-.statistic {
-  padding: 5rem;
+.statistic .statistic-box .box-down .box {
 
-  .statistic-box .box-down .box {
+  .box-title {
+    font-size: 3.25rem;
+    line-height: 74px;
+    color: $text-grey;
+  }
 
-    .box-title {
-      font-size: 3.25rem;
-      line-height: 74px;
-      color: $text-grey;
-    }
+  .nub {
+    font-size: 3.25rem;
+    line-height: 74px;
+    color: $text-green;
+    padding: 2rem 0;
+  }
+}  
 
-    .nub {
-      font-size: 3.25rem;
-      line-height: 74px;
-      color: $text-green;
-    }
-  }  
-}
 
 @media (max-width: 767.98px) {
 
