@@ -19,85 +19,85 @@
     width: 26rem;
     background: #fff;
     position: relative;
+  }
 
-    .close-register-form {
-      position: absolute;
-      top: -1rem;
-      right: -1rem;
-      font-size: 1.5rem;
-      cursor: pointer;
-      color: #fff;
-      border-radius: 999px;
-      padding: .2rem .5rem;
+  form .close-register-form {
+    position: absolute;
+    top: -1rem;
+    right: -1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 999px;
+    padding: .2rem .5rem;
+    background: $text-green;
+
+    &:hover {
+      background: $text-green-dark;
+      color: #111;
+    }
+  }
+
+  form .btn-form {
+    width: 100%;
+    height: 4rem;
+    font-size: 1.5rem;
+    border: .5px solid $text-green;
+    text-align: center;
+
+    a {
+      padding-top: .6rem;
+      text-transform: uppercase;
+      width: 50%;
+      border: .5px solid $text-green;
+    }
+
+    .btn-login-link {
+      background: #fff;
+      color: $text-green;
+    }
+
+    .btn-register-link {
       background: $text-green;
+      color: #fff;
+    }
+  }
+
+  form .register-container {
+    padding: 1rem;
+
+    p {
+      font-size: 1rem;
+      color: $text-grey;
+    }
+
+    input {
+      width: 100%;
+      padding: .5rem 1.4rem;
+      border: 1px solid #E1E1E1;
+      background: #F2F2F2;
+    }
+  }
+
+  form .register-btn {
+    text-align: center;
+    margin-top: 1rem;
+    padding: 2rem;
+
+    a {
+      font-size: 1rem;
+      color: #fff;
+      cursor: pointer;
+      padding: .5rem 4rem;
+      display: inline-block;
+      border-radius: 22px;
+      background: $text-green;
+      box-shadow: $box-shadow;
+      text-transform: uppercase;
 
       &:hover {
         background: $text-green-dark;
         color: #111;
-      }
-    }
-
-    .btn-form {
-      width: 100%;
-      height: 4rem;
-      font-size: 1.5rem;
-      border: .5px solid $text-green;
-      text-align: center;
-
-      a {
-        padding-top: .6rem;
-        text-transform: uppercase;
-        width: 50%;
-        border: .5px solid $text-green;
-      }
-
-      .btn-login-link {
-        background: #fff;
-        color: $text-green;
-      }
-
-      .btn-register-link {
-        background: $text-green;
-        color: #fff;
-      }
-    }
-
-    .register-container {
-      padding: 1rem;
-
-      p {
-        font-size: 1rem;
-        color: $text-grey;
-      }
-
-      input {
-        width: 100%;
-        padding: .5rem 1.4rem;
-        border: 1px solid #E1E1E1;
-        background: #F2F2F2;
-      }
-    }
-
-    .register-btn {
-      text-align: center;
-      margin-top: 1rem;
-      padding: 2rem;
-
-      a {
-        font-size: 1rem;
-        color: #fff;
-        cursor: pointer;
-        padding: .5rem 4rem;
-        display: inline-block;
-        border-radius: 22px;
-        background: $text-green;
-        box-shadow: $box-shadow;
-        text-transform: uppercase;
-
-        &:hover {
-          background: $text-green-dark;
-          color: #111;
-        }
       }
     }
   }
