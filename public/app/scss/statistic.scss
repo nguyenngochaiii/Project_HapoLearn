@@ -1,5 +1,4 @@
 .statistic .statistic-box .box-down .box {
-
   .box-title {
     font-size: 3.25rem;
     line-height: 74px;
@@ -12,13 +11,11 @@
     color: $text-green;
     padding: 2rem 0;
   }
-}  
-
+}
 
 @media (max-width: 767.98px) {
 
   .statistic .statistic-box .box-down .box {
-
     .box-title {
       font-size: calc(1vw + 1.75rem);
     }
@@ -35,5 +32,4 @@
     flex-direction: column;
     align-items: center;
   }
-
 }

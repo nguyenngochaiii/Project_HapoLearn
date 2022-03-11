@@ -15,15 +15,16 @@
       width: 100%;
     }
   }
-}    
+}
+
 .question .question-bg .title {
-      width: 100%;
-      text-align: center;
-      font-size: 5rem;
-      color: #fff;
-      padding: 4rem 0;
-      display: none;
-      font-weight: 600;
+  width: 100%;
+  text-align: center;
+  font-size: 5rem;
+  color: #fff;
+  padding: 4rem 0;
+  display: none;
+  font-weight: 600;
 }
 
 .question .question-bg .lists {
@@ -75,6 +76,7 @@
 
     .list-left {
       margin: 0;
+
       .title-second {
         display: none !important;
       }
@@ -97,7 +99,7 @@
     margin-left: auto;
     width: 300px !important;
   }
-    
+
   .question-bg .lists {
     flex-direction: column;
     align-items: center;

@@ -35,7 +35,7 @@
             <nav class="nav">
                 <a href="#home">home</a>
                 <a href="#course" class="course-color">all course</a>
-                <a href="#login_register" id="login_register">login/register</a>
+                <a href="#login_register" id="login-register">login/register</a>
                 <a href="#profile" class="full-mb">profile</a>
             </nav>
         </div>
@@ -546,40 +546,7 @@
         src="./js/slick-1.8.1/slick/slick.min.js"
     ></script>
 
-    <script type="text/javascript">
-        $(".slider").slick({
-            dots: false,
-            infinite: false,
-            speed: 300,
-            slidesToShow: 2,
-            slidesToScroll: 2,
-            responsive: [
-                {
-                    breakpoint: 1024,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 3,
-                        infinite: true,
-                        dots: false
-                    }
-                },
-                {
-                    breakpoint: 600,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 2
-                    }
-                },
-                {
-                    breakpoint: 480,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1
-                    }
-                }
-            ]
-        });
-    </script>
+    <script type="text/javascript" src="./js/slick.js"></script>
 </body>
 
 </html>

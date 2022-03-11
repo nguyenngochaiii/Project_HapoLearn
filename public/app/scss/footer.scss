@@ -1,4 +1,4 @@
-.footer .ft-bg{
+.footer .ft-bg {
   background: $text-grey;
 }
 
@@ -10,16 +10,16 @@
     width: 100%;
   }
 
-  .ft-left .first .logo{
+  .ft-left .first .logo {
     width: 300px;
     height: 60px;
-    
-    img{
+
+    img {
       width: 100%;
     }
   }
 
-  .ft-left .first p{
+  .ft-left .first p {
     margin-left: 3rem;
     font-size: 1rem;
     line-height: 25px;
@@ -27,10 +27,11 @@
     color: #fff;
   }
 
-  .ft-left .second{
+  .ft-left .second {
     width: 100%;
     gap: 3rem;
-    a{
+
+    a {
       color: #fff;
       font-size: 1rem;
       padding: .7rem;
@@ -38,22 +39,22 @@
     }
   }
 
-  .ft-icons{
+  .ft-icons {
     height: 50px;
     gap: 1rem;
     top: 40%;
   }
 
-  .ft-icons .icon{
+  .ft-icons .icon {
 
-    i{
+    i {
       width: 50px;
       height: 50px;
       background: #fff;
       border-radius: 999px;
     }
 
-    a{
+    a {
       display: none;
       margin-left: 1rem;
       font-size: 1rem;
@@ -61,49 +62,48 @@
       color: #fff;
     }
   }
-  
-  .i-face:hover{
-    a{
+
+  .i-face:hover {
+    a {
       display: block;
     }
   }
 
-  .i-phone:hover{
-    a{
+  .i-phone:hover {
+    a {
       display: block;
     }
   }
 
-  .i-email:hover{
-    a{
+  .i-email:hover {
+    a {
       display: block;
     }
   }
 }
-.footer .footer-down {
 
+.footer .footer-down {
   background: #454545;
   color: #fff;
   font-size: .8rem;
 }
 
-
 @media (max-width: 767.98px) {
   .footer .footer-up .ft-left {
 
-    .first .logo{
+    .first .logo {
 
       width: 170px;
       height: 35px;
     }
 
-    .first p{
+    .first p {
 
       font-size: calc(1vw + .5rem);
       margin: 0;
     }
 
-    .second a{
+    .second a {
       font-size: calc(1vw + .5rem);
     }
   }
@@ -111,16 +111,15 @@
   .footer .footer-up .ft-icons {
     gap: .5rem;
 
-    .icon{
-
-      i{
+    .icon {
+      i {
         width: 40px;
         height: 40px;
         min-width: 30px;
         min-height: 30px;
       }
-  
-      a{
+
+      a {
         display: none;
       }
     }
@@ -128,11 +127,11 @@
 }
 
 @media (max-width: 575.98px) {
-  .ft-left{
+  .ft-left {
     flex-direction: column-reverse;
   }
 
-  .ft-icons{
+  .ft-icons {
     position: absolute;
     justify-content: end;
     margin-top: 5rem;
