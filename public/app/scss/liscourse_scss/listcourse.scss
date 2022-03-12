@@ -1,29 +1,49 @@
 .list-course .list-course-bg{
   margin-top: 150px;
+  padding: 1rem 2rem;
 
   .box-search{
     gap: 2rem;
+    padding: 1rem;
+  }
+
+  .box-search .filter-container p{
+    margin: 0;
   }
 
   .box-search .filter-container .btn-filter{
       background: #fff;
       color: $text-grey;
       border: 1px solid #C4C4C4;
-      padding: .5rem 1rem;
+      padding: .5rem 2rem;
       border-radius: 5px;
   }
-        
-  .box-search .search-container {
 
-    form{
-      background: #FFFFFF;
-      border: 1px solid #C4C4C4;
-      border-radius: 5px;
-    }
-
-    .btn-search{
-      background: #fff;
-      padding: .5rem 1.5rem;
+  .box-search .search-container form{
+    background: #FFFFFF;
+    border: 1px solid #C4C4C4;
+    border-radius: 5px;
+    padding: .5rem;
+    
+    input {
+      width: 400px;
     }
   }
+
+  .box-search .search-container .btn-search-form{
+    background: #fff;
+    padding: 0 1rem;
+  }
+
+  .box-search .btn-container-search{
+    background: $text-green;
+    color: #fff;
+    border: 1px solid #B2D235;
+    border-radius: 5px;
+    padding: 0 1rem;
+  }
+
+
+
+
 }
