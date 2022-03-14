@@ -57,14 +57,14 @@
       display: none;
       margin-left: 1rem;
       font-size: 1rem;
-      text-decoration: underline;
       color: #fff;
+      text-decoration: underline !important;
     }
   }
 
   .i-face:hover {
     a {
-      display: block;
+      display: block;  
     }
   }
 
@@ -89,7 +89,6 @@
 
 @media (max-width: 767.98px) {
   .footer .footer-up .ft-left {
-
     .first .logo {
       width: 170px;
       height: 35px;
