@@ -6,8 +6,11 @@
   text-align: center;
   padding-bottom: 2rem;
   color: $text-heading;
-  text-decoration: underline !important;
-  text-decoration-color: $text-green !important;
+
+  span{
+    border-bottom: .5rem solid $text-green;
+    border-radius: 3px;
+  }
 }
 
 .courses {
