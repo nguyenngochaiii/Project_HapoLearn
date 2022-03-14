@@ -1,0 +1,203 @@
+.list-course .list-course-bg {
+  margin-top: 100px;
+  padding: 1rem 2rem;
+  background: $bg-detail;
+
+  .box-search {
+    gap: 2rem;
+    padding: 1rem;
+
+    .filter-container p {
+      margin: 0;
+    }
+
+    .filter-container .btn-filter {
+      background: #fff;
+      color: $text-grey;
+      border: 1px solid #C4C4C4;
+      padding: .5rem 2rem;
+      border-radius: 5px;
+    }
+
+    .btn-container-search {
+      background: $text-green;
+      color: #fff;
+      border: 1px solid #B2D235;
+      border-radius: 5px;
+      padding: 0 1rem;
+    }
+
+  }
+
+  .box-search .search-container form {
+    background: #FFFFFF;
+    border: 1px solid #C4C4C4;
+    border-radius: 5px;
+    padding: .5rem;
+
+    input {
+      width: 400px;
+    }
+  }
+
+  .box-search .search-container .btn-search-form {
+    background: #fff;
+    padding: 0 1rem;
+  }
+
+  .filter-select .filter-card {
+    border: 1px solid #C4C4C4;
+    border-radius: 5px;
+    background: #fff;
+
+    p {
+      color: $text-grey;
+      font-size: 1rem;
+      line-height: 22px;
+      font-weight: 700;
+    }
+
+    select {
+      width: 200px;
+      border: 1px solid #E5E6E7;
+      box-sizing: border-box;
+      border-radius: 2px 2px 0px 0px;
+    }
+  }
+
+  .filter-select .filter-card .filter-card-up {
+    gap: .75rem;
+
+    .btn-new {
+      border-radius: 2px;
+      background: $text-green;
+      color: white;
+      padding: .5rem 1.5rem;
+    }
+
+    .btn-old {
+      border-radius: 2px;
+      background: $bg-gray;
+      color: $text-grey;
+      padding: .5rem 1.5rem;
+    }
+  }
+
+  .filter-select .filter-card .filter-card-down {
+    gap: .5rem;
+    height: 54px;
+  }
+
+  .box-containers {
+    gap: 2rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+
+    .box {
+      width: 49%;
+      background: #FFFFFF;
+      border: 1px solid #F1F1F1;
+      box-sizing: border-box;
+      box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25);
+      border-radius: 8px;
+    }
+  }
+
+  .box-containers .box .detail-box .img-box {
+    padding: 1rem;
+
+    img {
+      width: 100%;
+      border-radius: 999px;
+    }
+  }
+
+  .box-containers .box .detail-box .detail {
+    padding: 1rem;
+
+    .title {
+      letter-spacing: -0.05em;
+      color: $text-grey;
+      letter-spacing: -0.05em;
+      font-size: 1.5rem;
+      line-height: 31px;
+      font-weight: 700;
+    }
+
+    .title-detail {
+      font-size: 1rem;
+      color: $text-grey;
+      letter-spacing: -0.05em;
+      line-height: 25px;
+    }
+  }
+
+  .box-containers .box .btn-more {
+    padding: .5rem 1rem;
+
+    .btn {
+      background: $text-green;
+      box-shadow: inset 0px 2px 4px #6F8710;
+      border-radius: 22px;
+      color: #fff;
+      border: 0.3px solid #FFFFFF;
+      width: 100px;
+      padding: .5rem;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 22px;
+    }
+  }
+
+  .box-containers .box .statistic .statistic-box {
+    border: 1px solid #F1F1F1;
+    padding: .5rem 1rem;
+
+    .box-title {
+      font-weight: 700;
+      font-size: 1.5rem;
+      line-height: 31px;
+      letter-spacing: -0.05em;
+      color: $text-grey;
+    }
+
+    .nub {
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 37px;
+      color: $text-green;
+    }
+  }
+
+  .select-page {
+    gap: .5rem;
+    margin-top: 2rem;
+
+    .next-page {
+      width: 2%;
+      padding: .5rem;
+      border: 1px solid $text-green;
+      box-sizing: border-box;
+      border-radius: 3px;
+      color: $text-green;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 25px;
+    }
+
+    .icon-arrow-left {
+      width: 3%;
+    }
+
+    .icon-arrow-right {
+      width: 3%;
+      background: $text-green;
+      color: #fff;
+    }
+
+    .box-nub-3 {
+      background: $text-green;
+      color: #fff;
+    }
+  }
+}
