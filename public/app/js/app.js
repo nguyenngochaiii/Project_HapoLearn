@@ -14,6 +14,4 @@ $(document).ready(function () {
   $("#register-btn").click(function () {
     $("#register").toggleClass('active');
   });
-
-
 });
