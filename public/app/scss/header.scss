@@ -14,7 +14,7 @@ header {
     height: 70px;
     margin-left: 2rem;
 
-    img{
+    img {
       width: 100%;
     }
   }
@@ -27,6 +27,7 @@ header {
     text-transform: uppercase;
     line-height: 19px;
     font-weight: bold;
+    text-decoration: none;
     font-size: 14px;
     cursor: pointer;
 
@@ -34,7 +35,6 @@ header {
       background: $text-green;
       box-shadow: $box-shadow;
       color: #fff;
-      text-decoration: none;
     }
   }
 
@@ -43,7 +43,6 @@ header {
     box-shadow: $box-shadow;
     color: #fff;
   }
-
 }
 
 @media (max-width: 767.98px) {
@@ -110,7 +109,7 @@ header {
         transform: rotate(180deg);
       }
 
-      .full-mb{
+      .full-mb {
         height: 100vh;
       }
     }

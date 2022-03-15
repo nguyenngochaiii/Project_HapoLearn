@@ -12,7 +12,7 @@
 
   .content {
     margin-left: 2rem;
-    
+
     .content-title {
       font-size: 3rem;
       color: $text-heading;
@@ -35,7 +35,7 @@
       color: $text-grey;
     }
 
-    .btn-start {
+    .banner-btn {
       background: $text-green;
       color: #fff;
       border-radius: 35px;
@@ -55,16 +55,16 @@
   }
 }
 
-@media (max-width: 992px) { 
+@media (max-width: 992px) {
   .banner .row .content {
     margin: 0;
 
     .content-title {
-      font-size: calc(1vw + 1.5rem);;
+      font-size: calc(1vw + 1.5rem);
     }
 
     span {
-      font-size: calc(1vw + 1.5rem);;
+      font-size: calc(1vw + 1.5rem);
     }
   }
 }
@@ -78,7 +78,6 @@
     background-position: center;
 
     .content {
-
       .content-title {
         font-size: calc(1vw + 1rem);
       }
@@ -97,7 +96,7 @@
         font-size: calc(.5vw + .5rem);
       }
 
-      .btn {
+      .banner-btn {
         font-size: calc(.5vw + .5rem);
       }
     }
