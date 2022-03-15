@@ -1,16 +1,16 @@
-.footer .ft-bg {
+.ft-bg {
   background: $text-grey;
 }
 
-.footer .footer-up {
+.footer-up {
   height: 300px;
   position: relative;
 
-  .ft-left .first {
+  .first {
     width: 100%;
   }
 
-  .ft-left .first .logo {
+  .logo {
     width: 300px;
     height: 60px;
 
@@ -19,7 +19,7 @@
     }
   }
 
-  .ft-left .first p {
+  p {
     margin-left: 3rem;
     font-size: 1rem;
     line-height: 25px;
@@ -27,7 +27,7 @@
     color: #fff;
   }
 
-  .ft-left .second {
+  .second {
     width: 100%;
     gap: 3rem;
 
@@ -45,7 +45,7 @@
     top: 40%;
   }
 
-  .ft-icons .icon {
+  .icon {
     i {
       width: 50px;
       height: 50px;
@@ -81,30 +81,30 @@
   }
 }
 
-.footer .footer-down {
+.footer-down {
   background: #454545;
   color: #fff;
   font-size: .8rem;
 }
 
 @media (max-width: 767.98px) {
-  .footer .footer-up .ft-left {
-    .first .logo {
+  .ft-left {
+    .logo {
       width: 170px;
       height: 35px;
     }
 
-    .first p {
+    p {
       font-size: calc(1vw + .5rem);
       margin: 0;
     }
 
-    .second a {
+    a {
       font-size: calc(1vw + .5rem);
     }
   }
 
-  .footer .footer-up .ft-icons {
+  .ft-icons {
     gap: .5rem;
 
     .icon {
