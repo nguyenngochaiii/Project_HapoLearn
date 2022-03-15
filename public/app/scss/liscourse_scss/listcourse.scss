@@ -11,7 +11,7 @@
       margin: 0;
     }
 
-    .filter-container .btn-filter {
+    .btn-filter {
       background: #fff;
       color: $text-grey;
       border: 1px solid #C4C4C4;
@@ -26,10 +26,9 @@
       border-radius: 5px;
       padding: 0 1rem;
     }
-
   }
 
-  .box-search .search-container form {
+  form {
     background: #FFFFFF;
     border: 1px solid #C4C4C4;
     border-radius: 5px;
@@ -40,12 +39,12 @@
     }
   }
 
-  .box-search .search-container .btn-search-form {
+  .btn-search-form {
     background: #fff;
     padding: 0 1rem;
   }
 
-  .filter-select .filter-card {
+  .filter-card {
     border: 1px solid #C4C4C4;
     border-radius: 5px;
     background: #fff;
@@ -65,7 +64,7 @@
     }
   }
 
-  .filter-select .filter-card .filter-card-up {
+  .filter-card-up {
     gap: .75rem;
 
     .btn-new {
@@ -83,7 +82,7 @@
     }
   }
 
-  .filter-select .filter-card .filter-card-down {
+  .filter-card-down {
     gap: .5rem;
     height: 54px;
   }
@@ -103,7 +102,7 @@
     }
   }
 
-  .box-containers .box .detail-box .img-box {
+  .box-containers .img-box {
     padding: 1rem;
 
     img {
@@ -112,7 +111,7 @@
     }
   }
 
-  .box-containers .box .detail-box .detail {
+  .box-containers .detail {
     padding: 1rem;
 
     .title {
@@ -132,7 +131,7 @@
     }
   }
 
-  .box-containers .box .btn-more {
+  .box-containers .btn-more {
     padding: .5rem 1rem;
 
     .btn {
@@ -149,7 +148,7 @@
     }
   }
 
-  .box-containers .box .statistic .statistic-box {
+  .box-containers .statistic-box {
     border: 1px solid #F1F1F1;
     padding: .5rem 1rem;
 
