@@ -8,7 +8,7 @@
 
   .box {
     .title {
-      font-size: 3rem;
+      font-size: 4rem;
       font-weight: 700;
       color: #fff;
       padding: 2rem;
@@ -19,8 +19,22 @@
       background: #fff;
       color: $text-green;
       border-radius: 35px;
-      padding: .5rem 3.5rem;
+      padding: .7rem 4rem;
+      text-decoration: none;
     }
+  }
+}
+
+@media (max-width: 992px) {
+  .banner-second .box{
+    .title {
+      font-size: calc(1vw + 2.5rem);
+    }
+  
+    .banner-second-btn {
+      font-size: calc(1vw + 1rem);
+      padding: .4rem 3rem;
+    }   
   }
 }
 
@@ -32,7 +46,7 @@
   
     .banner-second-btn {
       font-size: calc(1vw + 1rem);
-      padding: 0 2rem;
+      padding: .2rem 2rem;
     }   
   }
 }

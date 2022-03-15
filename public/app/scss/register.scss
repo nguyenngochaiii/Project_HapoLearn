@@ -47,6 +47,7 @@
 
     a {
       padding-top: .6rem;
+      font-weight: 700;
       text-transform: uppercase;
       width: 50%;
       border: .5px solid $text-green;
@@ -68,6 +69,7 @@
 
     p {
       font-size: 1rem;
+      font-weight: 700;
       color: $text-grey;
     }
 
@@ -94,6 +96,7 @@
       background: $text-green;
       box-shadow: $box-shadow;
       text-transform: uppercase;
+      text-decoration: none;
 
       &:hover {
         background: $text-green-dark;
