@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Course</title>
+
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Bootstrap cdn link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="./public/css/app.css">
+</head>
+
+<body>
+
+    <!-- header section starts -->
+    <header class="header fixed-top py-3" id="header">
+        <div class="container-fluid d-flex align-items-center justify-content-between container-header">
+            <div class="fas fa-bars menu-bar d-none"></div>
+            <a href="#" class="logo">
+                <img src="./public/image/logo.png" alt="logo">
+            </a>
+            <nav class="nav">
+                <a href="#home">home</a>
+                <a href="#course" class="course-color">all course</a>
+                <a href="#login_register" id="login-register">login/register</a>
+                <a href="#profile" class="full-mb">profile</a>
+            </nav>
+        </div>
+    </header>
+    <!-- header section ends -->
+
+    <!-- detailPage section starts -->
+    <section class="detail-page">
+        <div class="container-fluid detail-page-bg d-flex">
+            <a href="#">Home <span>></span></a>
+            <a href="#">All courses <span>></span></a>
+            <a href="#">Course detail</a>
+        </div>
+    </section>
+    <!-- detailPage section ends -->
+
+    <!-- detailCourse section starts -->
+    <section class="detail-course">
+        <div class="container-fluid detail-course-bg d-flex">
+            <div class="detail-body-left d-flex flex-column">
+                <div class="banner">
+                    <img src="./public/image/html.png" alt="html_banner">
+                </div>
+                <div class="list-lessons">
+
+                </div>
+            </div>
+            <div class="detail-body-right d-flex flex-column">
+                <div class="descriptions d-flex flex-column">
+                    <p class="de-tilte">Descriptions course</p>
+                    <span class="line"></span>
+                    <p class="de-detail">Vivamus volutpat eros pulvinar velit laoreet, sit amet egestas erat dignissim. Sed quis rutrum tellus, sit amet viverra felis. Cras sagittis sem sit amet urna feugiat rutrum. Nam nulla ipsum, venenatis malesuada felis quis, ultricies convallis neque. Pellentesque tristique fringilla tempus. Vivamus bibendum nibh in dolor pharetra, a euismod nulla dignissim. Aenean viverra tincidunt nibh, in imperdiet nunc. Suspendisse eu ante pretium, consectetur leo at, congue quam. Nullam hendrerit porta ante vitae tristique.</p>
+                </div>
+                <div class="detail-lessons d-flex flex-column">
+                    <div class="learner d-flex">
+                        <i class="fa-solid fa-user-group"></i>
+                        <p class="name">Learners</p>
+                        <span>:</span>
+                        <pc class="nub">500</pc>
+                    </div>
+                    <div class="lessons d-flex">
+                        <i class="fa-regular fa-browser"></i>
+                        <p class="name">Lessons</p>
+                        <span>:</span>
+                        <pc class="nub">100 lesson</pc>
+                    </div>
+                    <div class="times d-flex">
+                        <i class="fa-regular fa-clock-nine"></i>
+                        <p class="name">Times</p>
+                        <span>:</span>
+                        <pc class="nub">80 hours</pc>
+                    </div>
+                    <div class="tags d-flex">
+                        <i class="fa-solid fa-key"></i>
+                        <p class="name">Tags</p>
+                        <span>:</span>
+                        <p class="nub">#learn, #code</p>
+                    </div>
+                    <div class="price d-flex">
+                        <i class="fa-regular fa-money-bill-1"></i>
+                        <p class="name">Price</p>
+                        <span>:</span>
+                        <pc class="nub">Free</pc>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- listCourse section ends -->
+
+    <!-- footer section starts -->
+    <section class="footer">
+        <div class="container-fluid ft-bg">
+            <div class="footer-up d-flex">
+                <div class="col-md-8 ft-left d-flex align-items-center justify-content-around">
+                    <div class="first d-flex flex-column">
+                        <div class="logo">
+                            <img src="./public/image/Logo_white.png" alt="logo" />
+                        </div>
+                        <p>
+                            Interactive lessons, "on-the-go"<br> practice, peer
+                            support.
+                        </p>
+                    </div>
+                    <div class="second d-flex justify-content-around">
+                        <div class="second-one d-flex flex-column">
+                            <a href="#home">Home</a>
+                            <a href="#feature">Feature</a>
+                            <a href="#course">Course</a>
+                            <a href="#blog">Blog</a>
+                        </div>
+                        <div class="second-two d-flex flex-column">
+                            <a href="#contact">Contact</a>
+                            <a href="#terms">Terms of Use</a>
+                            <a href="#faq">FAQ</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 ft-icons d-flex text-center ">
+                    <div class="icon i-face d-flex align-items-center justify-content-center">
+                        <i class="fa-brands fa-facebook-f d-flex align-items-center justify-content-center"></i>
+                        <a href="#">facebook.com/tuyen.dung.haposoft</a>
+                    </div>
+                    <div class="icon i-phone d-flex align-items-center justify-content-center">
+                        <i class="fa-solid fa-phone d-flex align-items-center justify-content-center"></i>
+                        <a href="#">+84-85-645-9898</a>
+                    </div>
+                    <div class="icon i-email d-flex align-items-center justify-content-center">
+                        <i class="fa-solid fa-envelope d-flex align-items-center justify-content-center"></i>
+                        <a href="#">info@haposoft.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-down d-flex text-center justify-content-center">
+            © 2020 HapoLearn, Inc. All rights reserved.
+        </div>
+    </section>
+    <!-- footer section ends -->
+
+    <!-- jquery cdn link -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+
+    <!-- custom js file link -->
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
