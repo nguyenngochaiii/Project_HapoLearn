@@ -65,22 +65,24 @@
 }
 
 @media (max-width: 767.98px) {
-  .feedback .text-center {
+  .feedback {
+    .title .text-center {
     width: 500px;
     font-size: calc(1vw + .7rem);
-  }
+    }
       
-  .feedback .details {
-    .name {
-      font-size: calc(1vw + .7rem);
-    }
+    .details-down .profile {
+      .name {
+        font-size: calc(1vw + .7rem);
+      }
 
-    p {
-      font-size: calc(1vw + .5rem);
-    }
+      p {
+        font-size: calc(1vw + .5rem);
+      }
 
-    .star {
-      font-size: calc(1vw + .5rem);
-    }    
+      .star {
+        font-size: calc(1vw + .5rem);
+      }    
+    }
   }
 }

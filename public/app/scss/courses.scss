@@ -7,7 +7,7 @@
   padding-bottom: 2rem;
   color: $text-heading;
 
-  span{
+  span {
     border-bottom: .5rem solid $text-green;
     border-radius: 3px;
     text-transform: none;
@@ -15,7 +15,10 @@
 }
 
 .courses {
-  .box-shadow{
+  position: relative;
+  top: -2rem;
+
+  .box-shadow {
     position: absolute;
     height: 100px;
     background: $header-shadow;
@@ -23,11 +26,11 @@
 
   .cards-container {
     gap: 40px;
-    margin-top: 5rem;
   }
 
   .card-items {
     max-height: 470px;
+    width: 450px;
     align-items: center;
     justify-content: center;
     box-shadow: $box-shadow;
@@ -75,13 +78,19 @@
       .card-text {
         font-size: .7rem;
         color: $text-grey;
-        padding: 1rem .5rem;
+        padding: 2.5rem .5rem;
+        font-weight: bold;
+        letter-spacing: -0.05em;
+        margin: 0;
       }
 
       .card-title {
         font-size: 1.5rem;
         color: $text-green;
-      }  
+        font-weight: bold;
+        letter-spacing: -0.05em;
+        margin: 0;
+      }
 
       .courses-btn {
         font-size: 1rem;
@@ -94,7 +103,7 @@
         text-decoration: none;
       }
 
-      .courses-btn:hover{
+      .courses-btn:hover {
         background: $text-green-dark;
         color: #111;
       }
@@ -109,7 +118,7 @@
     color: $text-green-dark;
     text-align: center;
 
-    &:hover{
+    &:hover {
       color: rgb(22, 114, 22);
       text-decoration: underline;
     }
@@ -121,30 +130,39 @@
     font-size: calc(1vw + 2rem);
   }
 
+  .courses {
+    top: -10rem;
+  }
+
   .courses .cards-container {
     gap: 1rem;
   }
 
   .courses .card-items {
     .card-header {
+      height: 150px;
+
       img {
-        width: 150px;
-        height: 80px;
+        width: 130px;
+        height: 60px;
       }
     }
 
     .card-body {
+      padding-bottom: 1.5rem;
+
       .card-title {
-        font-size: calc(1vw + .7rem);
+        font-size: calc(1vw + .5rem);
       }
-  
+
       .card-text {
         font-size: calc(1vw + .2rem);
+        padding: 1rem;
       }
-  
+
       .courses-btn {
-        font-size: calc(1vw + .5rem);
-        padding: .5rem 1rem;
+        font-size: calc(1vw + .3rem);
+        padding: .3rem 1rem;
         letter-spacing: -0.05em;
       }
     }
@@ -159,12 +177,16 @@
   .courses {
     margin-top: 20rem;
 
+    .card-items {
+      width: 300px;
+    }
+
     .cards-container {
       flex-direction: column;
       align-items: center;
     }
 
-    .card-items .card-body .courses-btn{
+    .card-items .card-body .courses-btn {
       padding: .5rem 2rem;
     }
   }

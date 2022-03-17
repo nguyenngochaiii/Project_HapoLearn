@@ -1,13 +1,15 @@
-.banner .main-bg {
-  height: 800px;
-  background-image: url("https://scontent.fhan5-9.fna.fbcdn.net/v/t1.15752-9/273808183_699100118119024_6518370349122794635_n.png?_nc_cat=109&ccb=1-5&_nc_sid=ae9488&_nc_ohc=5QN0ioUHSXsAX_cKQB8&_nc_ht=scontent.fhan5-9.fna&oh=03_AVJ60zU72yRNJcWAf40Iez3bhUnTX0EqITpiVKqLsaHQIA&oe=62576452");
-  width: 100%;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
+.banner{ 
+  .main-bg {
+    height: 1050px;
+    background-image: url("https://scontent.fhan5-9.fna.fbcdn.net/v/t1.15752-9/273808183_699100118119024_6518370349122794635_n.png?_nc_cat=109&ccb=1-5&_nc_sid=ae9488&_nc_ohc=5QN0ioUHSXsAX_cKQB8&_nc_ht=scontent.fhan5-9.fna&oh=03_AVJ60zU72yRNJcWAf40Iez3bhUnTX0EqITpiVKqLsaHQIA&oe=62576452");
+    width: 100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+  } 
 
   .row {
-    min-height: 800px;
+    height: 1050px;
   }
 
   .content {
@@ -16,12 +18,16 @@
     .content-title {
       font-size: 3rem;
       color: $text-heading;
+      margin: 0;
+      line-height: 61px;
+      letter-spacing: -0.05em;
     }
 
     span {
       font-size: 3rem;
       color: $text-heading;
       font-weight: 800;
+      line-height: 61px;
     }
 
     img {
@@ -33,6 +39,8 @@
     .content-title-second {
       font-size: 1rem;
       color: $text-grey;
+      line-height: 25px;
+      letter-spacing: -0.05em;
     }
 
     .banner-btn {
@@ -40,7 +48,7 @@
       color: #fff;
       border-radius: 35px;
       box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-      padding: .6rem 4.5rem;
+      padding: 1rem 4.5rem;
       font-size: 1.5rem;
       line-height: 37px;
       cursor: pointer;
@@ -57,23 +65,30 @@
 }
 
 @media (max-width: 1280px) {
-  .banner .content {
-    margin: 0;
+  .banner {
+    .main-bg {
+      height: 800px;
+    }
 
+    .row {
+      height: 800px;
+    }
+
+    .content {
+      padding: 0;
+    }
     .content-title {
-      font-size: calc(1vw + 2rem);
+      font-size: calc(1vw + 1.8rem);
     }
 
     span {
-      font-size: calc(1vw + 2rem);
+      font-size: calc(1vw + 1.8rem);
     }
   }
 }
 
 @media (max-width: 992px) {
   .banner .content {
-    margin: 0;
-
     .content-title {
       font-size: calc(1vw + 1.5rem);
     }
@@ -92,18 +107,22 @@
 @media (max-width: 767.98px) {
   .banner .main-bg {
     position: relative;
-    background-image: url("https://scontent.fhan5-9.fna.fbcdn.net/v/t1.15752-9/273808183_699100118119024_6518370349122794635_n.png?_nc_cat=109&ccb=1-5&_nc_sid=ae9488&_nc_ohc=5QN0ioUHSXsAX_cKQB8&_nc_ht=scontent.fhan5-9.fna&oh=03_AVJ60zU72yRNJcWAf40Iez3bhUnTX0EqITpiVKqLsaHQIA&oe=62576452");
     background-size: 100% 350px;
     background-repeat: no-repeat;
     background-position: center;
+    height: 700px;
+
+    .row {
+      height: 700px;
+    }
 
     .content {
       .content-title {
-        font-size: calc(1vw + 1rem);
+        font-size: calc(1vw + 1.2rem);
       }
 
       span {
-        font-size: calc(1vw + 1rem);
+        font-size: calc(1vw + 1.2rem);
       }
 
       img {
@@ -112,13 +131,9 @@
         margin-bottom: 10px;
       }
 
-      .content-title-second {
-        font-size: calc(.5vw + .5rem);
-      }
-
       .banner-btn {
-        font-size: calc(.5vw + .5rem);
-        padding: .2rem 3rem;
+        font-size: calc(1vw + .7rem);
+        padding: .2rem 2rem;
       }
     }
   }
@@ -126,11 +141,16 @@
 
 @media (max-width: 575.98px) {
   .banner .main-bg {
-    height: 50vh;
+    height: 350px;
+    background-size: 100% 200px;
+
+    .row {
+      height: 350px;
+    }
 
     .content {
-      padding-top: 17rem;
-      text-align: center;
+      padding-top: 18rem;
+      margin-left: 4rem;
     }
   }
 }
