@@ -16,7 +16,7 @@
 
 .courses {
   position: relative;
-  top: -2rem;
+  top: 5%;
 
   .box-shadow {
     position: absolute;
@@ -173,9 +173,9 @@
   }
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 576px) {
   .courses {
-    margin-top: 20rem;
+    margin-top: 25rem;
 
     .card-items {
       width: 300px;

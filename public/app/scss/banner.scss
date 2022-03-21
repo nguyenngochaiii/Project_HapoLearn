@@ -104,7 +104,7 @@
   }
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 768px) {
   .banner .main-bg {
     position: relative;
     background-size: 100% 350px;
@@ -139,7 +139,7 @@
   }
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 576px) {
   .banner .main-bg {
     height: 350px;
     background-size: 100% 200px;
@@ -149,8 +149,10 @@
     }
 
     .content {
+      width: 100%;
       padding-top: 18rem;
-      margin-left: 4rem;
+      margin: 0;
+      text-align: center;
     }
   }
 }

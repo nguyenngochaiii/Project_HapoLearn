@@ -67,12 +67,12 @@
   }
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 768px) {
   .question .question-bg .lap-left {
-    width: 278px;
-    height: 278px;
+    width: 258px;
+    height: 258px;
     top: -7rem;
-    left: -3rem;
+    left: -4rem;
   }
 
   .question .question-bg .title {
@@ -101,10 +101,17 @@
   }
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 576px) {
+  .question .question-bg .lap-left {
+    width: 238px;
+    height: 238px;
+    top: -5rem;
+    left: -3rem;
+  }
+
   .question .question-bg .title {
     margin-left: auto;
-    width: 300px;
+    width: 250px;
   }
 
   .question .lists {
