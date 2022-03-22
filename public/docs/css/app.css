@@ -535,7 +535,7 @@ header .nav .course-color {
   background: linear-gradient(180deg, #FFFBFB 87.5%, #E7E9EE 100%);
 }
 .courses .cards-container {
-  gap: 40px;
+  gap: 20px;
 }
 .courses .card-items {
   max-height: 470px;
