@@ -26,6 +26,14 @@
   }
 }
 
+.feedback .triangle {
+  width: 30px;
+  height: 30px;
+  clip-path: polygon(50% 60%, 0 0, 100% 0);
+  background: $bg-detail;
+  margin-left: 3rem;
+}
+
 .feedback .details-down {
   padding: 2rem 1rem;
 
