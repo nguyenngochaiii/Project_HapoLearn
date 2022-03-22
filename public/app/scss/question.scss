@@ -67,6 +67,15 @@
   }
 }
 
+@media (max-width: 992px) {
+  .question .question-bg .lap-left {
+    width: 328px;
+    height: 328px;
+    top: -9rem;
+    left: -5rem;
+  }
+}
+
 @media (max-width: 768px) {
   .question .question-bg .lap-left {
     width: 258px;
