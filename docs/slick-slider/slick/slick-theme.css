@@ -21,25 +21,21 @@
 {
     font-size: 0;
     line-height: 0;
-
     position: absolute;
     top: 30%;
-
     display: block;
-
-    width: 20px;
-    height: 20px;
+    z-index: 999;
+    width: 30px;
+    height: 30px;
     padding: 0;
     -webkit-transform: translate(0, -50%);
     -ms-transform: translate(0, -50%);
     transform: translate(0, -50%);
-
     cursor: pointer;
-
     color: transparent;
     border: none;
     outline: none;
-    background: transparent;
+    background: #fff;
 }
 .slick-prev:hover,
 .slick-prev:focus,
@@ -48,7 +44,7 @@
 {
     color: transparent;
     outline: none;
-    background: transparent;
+    background: #fff;
 }
 .slick-prev:hover:before,
 .slick-prev:focus:before,
@@ -70,15 +66,14 @@
     font-size: 20px;
     line-height: 1;
     opacity: .75;
-    color: #111;
-
+    color: #969494;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
 .slick-prev
 {
-    left: 40px;
+    left: 47px;
 }
 [dir='rtl'] .slick-prev
 {
@@ -87,16 +82,34 @@
 }
 .slick-prev:before
 {
-    content: '←';
+    font-family: "Font Awesome 5 Free";
+    content: "\f104";
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: 900;
+    padding-top: 5px;
+    width: 30px;
+    height: 30px;
+    border: 0.5px solid #C4C4C4;
+    border-radius: 999px;
 }
 [dir='rtl'] .slick-prev:before
 {
-    content: '→';
+    font-family: "Font Awesome 5 Free";
+    content: "\f105";
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: 900;
+    padding-top: 5px;
+    width: 30px;
+    height: 30px;
+    border: 0.5px solid #C4C4C4;
+    border-radius: 999px;
 }
 
 .slick-next
 {
-    right: 40px;
+    right: 47px;
 }
 [dir='rtl'] .slick-next
 {
@@ -105,11 +118,29 @@
 }
 .slick-next:before
 {
-    content: '→';
+    font-family: "Font Awesome 5 Free";
+    content: "\f105";
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: 1000;
+    padding-top: 5px;
+    width: 30px;
+    height: 30px;
+    border: 0.5px solid #C4C4C4;
+    border-radius: 999px;
 }
 [dir='rtl'] .slick-next:before
 {
-    content: '←';
+    font-family: "Font Awesome 5 Free";
+    content: "\f104";
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: 1000;
+    padding-top: 5px;
+    width: 30px;
+    height: 30px;
+    border: 0.5px solid #C4C4C4;
+    border-radius: 999px;
 }
 
 /* Dots */
@@ -162,7 +193,7 @@
     color: transparent;
     border: 0;
     outline: none;
-    background: transparent;
+    background: #111;
 }
 .slick-dots li button:hover,
 .slick-dots li button:focus

@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HapoLearn</title>
+    <link rel="icon" href="./favicon.png">
 
     <!-- font awesome cdn link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -15,8 +16,8 @@
         integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 
     <!-- slick cdn link -->
-    <link rel="stylesheet" type="text/css" href="./js/slick-1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="./js/slick-1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="./js/slick-slider/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="./js/slick-slider/slick/slick-theme.css" />
 
     <!-- custom css file link -->
     <link rel="stylesheet" href="./public/css/app.css">
@@ -24,42 +25,25 @@
 </head>
 
 <body>
-   <!-- header section starts -->
-   <header class="header fixed-top py-3" id="header">
+    <!-- header section starts -->
+    <header class="header" id="header">
         <div class="container-fluid d-flex align-items-center justify-content-between container-header">
             <div class="fas fa-bars menu-bar d-none"></div>
             <a href="#" class="logo">
-                <img src="./public/image/logo.png" alt="logo">
+                <img src="../images/logo.png" alt="logo">
             </a>
             <nav class="nav">
                 <a href="#home">home</a>
-                <a href="#course" class="course-color">all course</a>
+                <a href="#course" class="active">all course</a>
                 <a href="#login_register" id="login-register">login/register</a>
-                <a href="#profile" class="full-mb">profile</a>
+                <a href="#profile" class="profile">profile</a>
             </nav>
         </div>
     </header>
     <!-- header section ends -->
 
-    <!-- banner section starts -->
-    <section class="banner" id="banner">
-        <div class="container-fluid main-bg">
-            <div class="row align-items-center">
-                <div class="col-md-6 content">
-                    <p class="content-title">Learn Anytime, Anywhere</p>
-                    <span>at HapoLearn</span>
-                    <img src="./public/image/logo_small.png" alt="logo">
-                    <span> !</span>
-                    <p class="content-title-second">Interactive lessons, "on-the-on"<br>practice, peer support.</p>
-                    <a href="#" class="banner-btn">Start Learning Now!</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- banner section ends -->
-
-    <!-- login form starts -->
-    <div class="login-form" id="login">
+     <!-- login form starts -->
+     <div class="login-form" id="login">
         <form action="" method="POST">
             <div class="close-login-form fa fa-times"></div>
             <div class="d-flex btn-form">
@@ -68,15 +52,15 @@
             </div>
             <div class="login-container">
                 <p>Username:</p>
-                <input type="text" name="username"/>
+                <input type="text" name="username" />
             </div>
             <div class="login-container">
                 <p>Password:</p>
-                <input type="password" name="password"/>
+                <input type="password" name="password" />
             </div>
             <div class="flex">
                 <input type="checkbox" name="" id="remember-me" />
-                <label for="remember-me">remember me</label>
+                <label for="remember-me">&nbsp;&nbsp;remember me</label>
                 <a href="#">forgot password?</a>
             </div>
             <div class="login-btn d-flex justify-content-center">
@@ -84,19 +68,15 @@
             </div>
             <p class="p-span"><span>Login width</span></p>
             <div class="d-flex btn-cre">
-                <a href="#" class="cre-gg"
-                    ><i class="fa-brands fa-google-plus-g"></i> Google</a
-                >
-                <a href="#" class="cre-fb"
-                    ><i class="fa-brands fa-facebook-f"></i> Facebook</a
-                >
+                <a href="#" class="cre-gg"><i class="fa-brands fa-google-plus-g"></i> Google</a>
+                <a href="#" class="cre-fb"><i class="fa-brands fa-facebook-f"></i> Facebook</a>
             </div>
         </form>
     </div>
     <!-- login form ends -->
 
     <!-- register form starts -->
-    <div class="register-form" id="register" >
+    <div class="register-form" id="register">
         <form action="" method="POST">
             <div class="close-register-form fa fa-times"></div>
             <div class="d-flex btn-form">
@@ -109,7 +89,7 @@
             </div>
             <div class="register-container">
                 <p>Email:</p>
-                <input type="email" name="email"/>
+                <input type="email" name="email" />
             </div>
             <div class="register-container">
                 <p>Password:</p>
@@ -117,7 +97,7 @@
             </div>
             <div class="register-container">
                 <p>Repeat Password:</p>
-                <input type="password" name="repassword"/>
+                <input type="password" name="repassword" />
             </div>
             <div class="register-btn d-flex justify-content-center">
                 <a href="#" class="">Register</a>
@@ -126,53 +106,67 @@
     </div>
     <!-- register form ends -->
 
+    <!-- banner section starts -->
+    <section class="banner" id="banner">
+        <div class="banner-bg"></div>
+        <div class="banner-content">
+            <p class="content-title">Learn Anytime, Anywhere</p>
+            <span>at HapoLearn</span>
+            <img src="../images/logo_small.png" alt="logo">
+            <span> !</span>
+            <p class="content-title-second">Interactive lessons, "on-the-on"<br>practice, peer support.</p>
+            <a href="#" class="banner-btn">Start Learning Now!</a>
+        </div>
+    </section>
+    <!-- banner section ends -->
+
     <!-- courses section starts -->
     <section class="courses" id="course">
-        <div class="container-fluid box-shadow"></div>
-        <div class="container-fluid">
+        <div class="container-custom">
             <div class="d-flex cards-container justify-content-center">
                 <div class="card-items text-center">
                     <div class="card-header html-bg">
-                        <img src="./public/image/html.png" alt="html_logo">
+                        <img src="../images/html.png" alt="html_logo">
                     </div>
                     <div class="card-body">
                         <p class="card-title">HTML/CSS/js Tutorial</p>
-                        <p class="card-text">I knew hardly anything about HTML, JS, and CSS before entering New
-                            Media,...</p>
+                        <p class="card-text">I knew hardly anything about HTML, JS, and CSS before entering New Media. I
+                            had coded quite a bit, but never touched anything in regards to web development.</p>
                         <a href="#" class="courses-btn">Take This Course</a>
                     </div>
                 </div>
                 <div class="card-items text-center">
                     <div class="card-header laravel-bg">
-                        <img src="./public/image/laravel_logo.png" alt="laravel_logo">
+                        <img src="../images/laravel_logo.png" alt="laravel_logo">
                     </div>
                     <div class="card-body">
-                        <p class="card-title">HTML/CSS/js Tutorial</p>
-                        <p class="card-text">I knew hardly anything about HTML, JS, and CSS before entering New
-                            Media,...</p>
+                        <p class="card-title">Laravel Tutorial</p>
+                        <p class="card-text">I knew hardly anything about HTML, JS, and CSS before entering New Media. I
+                            had coded quite a bit, but never touched anything in regards to web development.
+                        </p>
                         <a href="#" class="courses-btn">Take This Course</a>
                     </div>
                 </div>
                 <div class="card-items text-center">
                     <div class="card-header php-bg">
-                        <img src="./public/image/php_logo.png" alt="php_logo">
+                        <img src="../images/php_logo.png" alt="php_logo">
                     </div>
                     <div class="card-body">
-                        <p class="card-title">HTML/CSS/js Tutorial</p>
-                        <p class="card-text">I knew hardly anything about HTML, JS, and CSS before entering New
-                            Media,...</p>
+                        <p class="card-title">PHP Tutorial</p>
+                        <p class="card-text">I knew hardly anything about HTML, JS, and CSS before entering New Media. I
+                            had coded quite a bit, but never touched anything in regards to web development.</p>
                         <a href="#" class="courses-btn">Take This Course</a>
                     </div>
                 </div>
             </div>
-            <p class="heading"><span>Other Courses</span></p>
+            <p class="heading"><span>Other courses</span></p>
             <div class="d-flex cards-container justify-content-center">
                 <div class="card-items text-center">
                     <div class="card-header css-bg">
-                        <img src="./public/image/css.png" alt="css_logo">
+                        <img src="../images/css.png" alt="css_logo">
                     </div>
                     <div class="card-body">
-                        <p class="card-title">HTML/CSS/js Tutorial</p>
+                        <p class="card-title">CSS Tutorial</p>
                         <p class="card-text">I knew hardly anything about HTML, JS, and CSS before entering New
                             Media,...</p>
                         <a href="#" class="courses-btn">Take This Course</a>
@@ -180,10 +174,10 @@
                 </div>
                 <div class="card-items text-center">
                     <div class="card-header rails-bg">
-                        <img src="./public/image/rails.png" alt="rails_logo">
+                        <img src="../images/rails.png" alt="rails_logo">
                     </div>
                     <div class="card-body">
-                        <p class="card-title">HTML/CSS/js Tutorial</p>
+                        <p class="card-title">Ruby on Rails Tutorial</p>
                         <p class="card-text">I knew hardly anything about HTML, JS, and CSS before entering New
                             Media,...</p>
                         <a href="#" class="courses-btn">Take This Course</a>
@@ -191,19 +185,18 @@
                 </div>
                 <div class="card-items text-center">
                     <div class="card-header java-bg">
-                        <img src="./public/image/java.png" alt="java_logo">
+                        <img src="../images/java.png" alt="java_logo">
                     </div>
                     <div class="card-body">
-                        <p class="card-title">HTML/CSS/js Tutorial</p>
+                        <p class="card-title">Java Tutorial</p>
                         <p class="card-text">I knew hardly anything about HTML, JS, and CSS before entering New
                             Media,...</p>
                         <a href="#" class="courses-btn">Take This Course</a>
                     </div>
                 </div>
             </div>
-            <p class="heading-second">
-                View All Our Courses
-                <i class="fa-solid fa-arrow-right-long"></i>
+            <p class="heading-second text-center">
+                <a href="#">View All Our Courses <i class="fa-solid fa-arrow-right-long"></i></a>
             </p>
         </div>
     </section>
@@ -213,37 +206,35 @@
     <section class="question" id="question">
         <div class="container-fluid question-bg">
             <div class="lap-left">
-                <img src="./public/image/lap_1.png" alt="lap-1" />
+                <img src="../images/lap_1.png" alt="lap-1" />
             </div>
             <p class="title">Why HapoLearn?</p>
-            <div class="lists d-flex text-center justify-content-between">
-                <div
-                    class="list-left d-flex justify-content-end align-items-center"
-                >
+            <div class="lists d-flex text-center">
+                <div class="list-left d-flex justify-content-end align-items-center">
                     <p class="title-second">Why HapoLearn?</p>
-                    <p class="comment">
-                        <i class="fa-solid fa-circle-check"></i> Interactive
-                        lessons, "on-the-go" practice, peer support.
-                    </p>
-                    <p class="comment">
-                        <i class="fa-solid fa-circle-check"></i> Interactive
-                        lessons, "on-the-go" practice, peer support.
-                    </p>
-                    <p class="comment">
-                        <i class="fa-solid fa-circle-check"></i> Interactive
-                        lessons, "on-the-go" practice, peer support.
-                    </p>
-                    <p class="comment">
-                        <i class="fa-solid fa-circle-check"></i> Interactive
-                        lessons, "on-the-go" practice, peer support.
-                    </p>
-                    <p class="comment">
-                        <i class="fa-solid fa-circle-check"></i> Interactive
-                        lessons, "on-the-go" practice, peer support.
-                    </p>
+                    <div class="comment d-flex align-items-center">
+                        <i class="fa-solid fa-circle-check"></i><p>Interactive
+                            lessons, "on-the-go" practice, peer support.</p> 
+                    </div>
+                    <div class="comment d-flex align-items-center">
+                        <i class="fa-solid fa-circle-check"></i><p>Interactive
+                            lessons, "on-the-go" practice, peer support.</p>
+                    </div>
+                    <div class="comment d-flex align-items-center">
+                        <i class="fa-solid fa-circle-check"></i> <p> Interactive
+                            lessons, "on-the-go" practice, peer support.</p>
+                    </div>
+                    <div class="comment d-flex align-items-center">
+                        <i class="fa-solid fa-circle-check"></i><p> Interactive
+                            lessons, "on-the-go" practice, peer support.</p> 
+                    </div>
+                    <div class="comment d-flex align-items-center">
+                        <i class="fa-solid fa-circle-check"></i> <p>Interactive
+                        lessons, "on-the-go" practice, peer support.</p>
+                    </div>
                 </div>
                 <div class="list-right d-flex align-items-center">
-                    <img src="./public/image/lap_2.png" alt="lap-2" />
+                    <img src="../images/lap_2.png" alt="lap-2" />
                 </div>
             </div>
         </div>
@@ -260,7 +251,6 @@
                     about us after learning with us and reaching their goals
                 </p>
             </div>
-
             <div class="row slider p-5">
                 <div class="col-md-6">
                     <div class="details">
@@ -274,12 +264,10 @@
                                 Bryan.”
                             </p>
                         </div>
+                        <div class="triangle"></div>
                         <div class="details-down d-flex align-items-center">
                             <div class="img-details">
-                                <img
-                                    src="./public/image/avatar.jfif"
-                                    alt="avatar"
-                                />
+                                <img src="../images/avatar.jfif" alt="avatar" />
                             </div>
                             <div class="profile d-flex">
                                 <p class="name">Hoang Anh Nguyen</p>
@@ -295,7 +283,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col-md-6">
                     <div class="details">
                         <div class="details-up d-flex">
@@ -308,12 +295,10 @@
                                 Bryan.”
                             </p>
                         </div>
+                        <div class="triangle"></div>
                         <div class="details-down d-flex">
                             <div class="img-details">
-                                <img
-                                    src="./public/image/avatar.jfif"
-                                    alt="avatar"
-                                />
+                                <img src="../images/avatar.jfif" alt="avatar" />
                             </div>
                             <div class="profile d-flex">
                                 <p class="name">Tuan Tran Hoang</p>
@@ -328,7 +313,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col-md-6">
                     <div class="details">
                         <div class="details-up d-flex">
@@ -341,12 +325,10 @@
                                 Bryan.”
                             </p>
                         </div>
+                        <div class="triangle"></div>
                         <div class="details-down d-flex">
                             <div class="img-details">
-                                <img
-                                    src="./public/image/avatar.jfif"
-                                    alt="avatar"
-                                />
+                                <img src="../images/avatar.jfif" alt="avatar" />
                             </div>
                             <div class="profile d-flex">
                                 <p class="name">Nguyen Ngoc Hai</p>
@@ -362,7 +344,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col-md-6">
                     <div class="details">
                         <div class="details-up d-flex">
@@ -375,12 +356,10 @@
                                 Bryan.”
                             </p>
                         </div>
+                        <div class="triangle"></div>
                         <div class="details-down d-flex">
                             <div class="img-details">
-                                <img
-                                    src="./public/image/avatar.jfif"
-                                    alt="avatar"
-                                />
+                                <img src="../images/avatar.jfif" alt="avatar" />
                             </div>
                             <div class="profile d-flex">
                                 <p class="name">Dao Thi Trang</p>
@@ -394,7 +373,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col-md-6">
                     <div class="details">
                         <div class="details-up d-flex">
@@ -407,15 +385,44 @@
                                 Bryan.”
                             </p>
                         </div>
+                        <div class="triangle"></div>
                         <div class="details-down d-flex">
                             <div class="img-details">
-                                <img
-                                    src="./public/image/avatar.jfif"
-                                    alt="avatar"
-                                />
+                                <img src="../images/avatar.jfif" alt="avatar" />
                             </div>
                             <div class="profile d-flex">
                                 <p class="name">Duong Thu Trang</p>
+                                <p>LINUX</p>
+                                <div class="star d-flex">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="details">
+                        <div class="details-up d-flex">
+                            <div class="line"></div>
+                            <p>
+                                “A wonderful course on how to start. Eddie
+                                beautifully conveys all essentials of a
+                                becoming a good Angular developer. Very glad
+                                to have taken this course. Thank you Eddie
+                                Bryan.”
+                            </p>
+                        </div>
+                        <div class="triangle"></div>
+                        <div class="details-down d-flex">
+                            <div class="img-details">
+                                <img src="../images/avatar.jfif" alt="avatar" />
+                            </div>
+                            <div class="profile d-flex">
+                                <p class="name">Do Duc Hoang</p>
                                 <p>LINUX</p>
                                 <div class="star d-flex">
                                     <i class="fa-solid fa-star"></i>
@@ -434,9 +441,7 @@
     <!-- feedback section ends -->
 
     <!-- banner-second section starts  -->
-    <section
-        class="banner-second d-flex justify-content-center align-items-center"
-    >
+    <section class="banner-second d-flex justify-content-center align-items-center">
         <div class="container-fluid">
             <div class="box text-center flex-column">
                 <p class="title">
@@ -450,12 +455,10 @@
 
     <!-- statistic section starts  -->
     <section class="statistic">
-        <div class="container-fluid">
+        <div class="container-custom">
             <p class="heading"><span>Statistic</span></p>
-            <div class="statistic-box">    
-                <div
-                    class="box-down text-center d-flex justify-content-between"
-                >
+            <div class="statistic-box">
+                <div class="box-down text-center d-flex justify-content-between">
                     <div class="box">
                         <p class="box-title">Courses</p>
                         <p class="nub">1,586</p>
@@ -481,14 +484,14 @@
                 <div class="col-md-8 ft-left d-flex align-items-center justify-content-around">
                     <div class="first d-flex flex-column">
                         <div class="logo">
-                            <img src="./public/image/Logo_white.png" alt="logo" />
+                            <img src="../images/logo_white.png" alt="logo" />
                         </div>
                         <p>
                             Interactive lessons, "on-the-go"<br> practice, peer
                             support.
                         </p>
                     </div>
-                    <div class="second d-flex justify-content-around">
+                    <div class="second d-flex justify-content-center">
                         <div class="second-one d-flex flex-column">
                             <a href="#home">Home</a>
                             <a href="#feature">Feature</a>
@@ -506,7 +509,7 @@
                     <div class="icon i-face d-flex align-items-center justify-content-center">
                         <i class="fa-brands fa-facebook-f d-flex align-items-center justify-content-center"></i>
                         <a href="#">facebook.com/tuyen.dung.haposoft</a>
-                    </div>    
+                    </div>
                     <div class="icon i-phone d-flex align-items-center justify-content-center">
                         <i class="fa-solid fa-phone d-flex align-items-center justify-content-center"></i>
                         <a href="#">+84-85-645-9898</a>
@@ -515,7 +518,7 @@
                         <i class="fa-solid fa-envelope d-flex align-items-center justify-content-center"></i>
                         <a href="#">info@haposoft.com</a>
                     </div>
-                </div>   
+                </div>
             </div>
         </div>
 
@@ -524,23 +527,14 @@
         </div>
     </section>
     <!-- footer section ends -->
-
+    
     <!-- jquery cdn link -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <!-- slick js file link -->
-    <script
-        type="text/javascript"
-        src="//code.jquery.com/jquery-1.11.0.min.js"
-    ></script>
-    <script
-        type="text/javascript"
-        src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
-    ></script>
-    <script
-        type="text/javascript"
-        src="./js/slick-1.8.1/slick/slick.min.js"
-    ></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="./js/slick-slider/slick/slick.min.js"></script>
 
     <!-- custom js file link -->
     <script src="./public/js/app.js"></script>
