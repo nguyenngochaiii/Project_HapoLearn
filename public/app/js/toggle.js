@@ -1,6 +1,7 @@
 $(document).ready(function () {
   $('.menu-bar').click(function () {
     $('.nav').toggleClass('active');
+    document.querySelector('.menu-bar').classList.toggle('fa-times');
   });
 
   $('#login-register').click(function () {

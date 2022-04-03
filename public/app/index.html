@@ -26,7 +26,7 @@
 
 <body>
     <!-- header section starts -->
-    <header class="header fixed-top py-3" id="header">
+    <header class="header" id="header">
         <div class="container-fluid d-flex align-items-center justify-content-between container-header">
             <div class="fas fa-bars menu-bar d-none"></div>
             <a href="#" class="logo">
@@ -34,33 +34,16 @@
             </a>
             <nav class="nav">
                 <a href="#home">home</a>
-                <a href="#course" class="course-color">all course</a>
+                <a href="#course" class="active">all course</a>
                 <a href="#login_register" id="login-register">login/register</a>
-                <a href="#profile" class="full-mb">profile</a>
+                <a href="#profile" class="profile">profile</a>
             </nav>
         </div>
     </header>
     <!-- header section ends -->
 
-    <!-- banner section starts -->
-    <section class="banner" id="banner">
-        <div class="container-fluid main-bg">
-            <div class="row align-items-center">
-                <div class="col-md-6 content">
-                    <p class="content-title">Learn Anytime, Anywhere</p>
-                    <span>at HapoLearn</span>
-                    <img src="../images/logo_small.png" alt="logo">
-                    <span> !</span>
-                    <p class="content-title-second">Interactive lessons, "on-the-on"<br>practice, peer support.</p>
-                    <a href="#" class="banner-btn">Start Learning Now!</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- banner section ends -->
-
-    <!-- login form starts -->
-    <div class="login-form" id="login">
+     <!-- login form starts -->
+     <div class="login-form" id="login">
         <form action="" method="POST">
             <div class="close-login-form fa fa-times"></div>
             <div class="d-flex btn-form">
@@ -123,10 +106,23 @@
     </div>
     <!-- register form ends -->
 
+    <!-- banner section starts -->
+    <section class="banner" id="banner">
+        <div class="banner-bg"></div>
+        <div class="banner-content">
+            <p class="content-title">Learn Anytime, Anywhere</p>
+            <span>at HapoLearn</span>
+            <img src="../images/logo_small.png" alt="logo">
+            <span> !</span>
+            <p class="content-title-second">Interactive lessons, "on-the-on"<br>practice, peer support.</p>
+            <a href="#" class="banner-btn">Start Learning Now!</a>
+        </div>
+    </section>
+    <!-- banner section ends -->
+
     <!-- courses section starts -->
     <section class="courses" id="course">
-        <div class="container-fluid box-shadow"></div>
-        <div class="container-fluid">
+        <div class="container-custom">
             <div class="d-flex cards-container justify-content-center">
                 <div class="card-items text-center">
                     <div class="card-header html-bg">
@@ -199,9 +195,8 @@
                     </div>
                 </div>
             </div>
-            <p class="heading-second">
-                View All Our Courses
-                <i class="fa-solid fa-arrow-right-long"></i>
+            <p class="heading-second text-center">
+                <a href="#">View All Our Courses <i class="fa-solid fa-arrow-right-long"></i></a>
             </p>
         </div>
     </section>
@@ -214,29 +209,29 @@
                 <img src="../images/lap_1.png" alt="lap-1" />
             </div>
             <p class="title">Why HapoLearn?</p>
-            <div class="lists d-flex text-center justify-content-between">
+            <div class="lists d-flex text-center">
                 <div class="list-left d-flex justify-content-end align-items-center">
                     <p class="title-second">Why HapoLearn?</p>
-                    <p class="comment">
-                        <i class="fa-solid fa-circle-check"></i> Interactive
-                        lessons, "on-the-go" practice, peer support.
-                    </p>
-                    <p class="comment">
-                        <i class="fa-solid fa-circle-check"></i> Interactive
-                        lessons, "on-the-go" practice, peer support.
-                    </p>
-                    <p class="comment">
-                        <i class="fa-solid fa-circle-check"></i> Interactive
-                        lessons, "on-the-go" practice, peer support.
-                    </p>
-                    <p class="comment">
-                        <i class="fa-solid fa-circle-check"></i> Interactive
-                        lessons, "on-the-go" practice, peer support.
-                    </p>
-                    <p class="comment">
-                        <i class="fa-solid fa-circle-check"></i> Interactive
-                        lessons, "on-the-go" practice, peer support.
-                    </p>
+                    <div class="comment d-flex align-items-center">
+                        <i class="fa-solid fa-circle-check"></i><p>Interactive
+                            lessons, "on-the-go" practice, peer support.</p> 
+                    </div>
+                    <div class="comment d-flex align-items-center">
+                        <i class="fa-solid fa-circle-check"></i><p>Interactive
+                            lessons, "on-the-go" practice, peer support.</p>
+                    </div>
+                    <div class="comment d-flex align-items-center">
+                        <i class="fa-solid fa-circle-check"></i> <p> Interactive
+                            lessons, "on-the-go" practice, peer support.</p>
+                    </div>
+                    <div class="comment d-flex align-items-center">
+                        <i class="fa-solid fa-circle-check"></i><p> Interactive
+                            lessons, "on-the-go" practice, peer support.</p> 
+                    </div>
+                    <div class="comment d-flex align-items-center">
+                        <i class="fa-solid fa-circle-check"></i> <p>Interactive
+                        lessons, "on-the-go" practice, peer support.</p>
+                    </div>
                 </div>
                 <div class="list-right d-flex align-items-center">
                     <img src="../images/lap_2.png" alt="lap-2" />
@@ -460,7 +455,7 @@
 
     <!-- statistic section starts  -->
     <section class="statistic">
-        <div class="container-fluid">
+        <div class="container-custom">
             <p class="heading"><span>Statistic</span></p>
             <div class="statistic-box">
                 <div class="box-down text-center d-flex justify-content-between">
@@ -496,7 +491,7 @@
                             support.
                         </p>
                     </div>
-                    <div class="second d-flex justify-content-around">
+                    <div class="second d-flex justify-content-center">
                         <div class="second-one d-flex flex-column">
                             <a href="#home">Home</a>
                             <a href="#feature">Feature</a>

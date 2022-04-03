@@ -1,22 +1,31 @@
 header {
   box-shadow: $box-shadow;
   background: #fff;
+  position: relative;
+  padding: .5rem 2.5rem;
+
+  .container-header {
+    padding: 1rem;
+  }
 
   .menu-bar {
     color: $text-grey;
     cursor: pointer;
-    font-size: 25px;
+    font-size: 20px;
     transition: 2s linear;
   }
 
   .logo {
     width: 340px;
     height: 70px;
-    margin-left: 2rem;
 
     img {
       width: 100%;
     }
+  }
+
+  .nav{
+    gap: 1rem;
   }
 
   .nav a {
@@ -38,21 +47,32 @@ header {
     }
   }
 
-  .nav .course-color {
+  .nav .active {
     background: $text-green;
     box-shadow: $box-shadow;
     color: #fff;
   }
 }
 
-@media (max-width: 768px) {
-  .container-header {
-    flex-direction: column;
-    gap: 20px;
-  }
+@media (max-width: 998px) {
+  header {
+    .logo {
+      width: 300px;
+      height: 70px;
+    }
 
-  .nav {
-    gap: 20px;
+    .nav {
+      gap: 0;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    .container-header {
+      flex-direction: column;
+      gap: 20px;
+    }
   }
 }
 
@@ -60,21 +80,25 @@ header {
   header {
     .container-header {
       flex-direction: row;
+      padding: .5rem;
 
       .menu-bar {
         position: absolute;
         display: inline-block !important;
+        left: 1rem;
+
+        .fa-times {
+          transform: rotate(180deg);
+        }
       }
     }
 
     .logo {
       display: inline-block;
       margin: 0 auto;
-      width: 150px;
-      height: 30px;
+      width: 200px;
+      height: 50px;
       justify-self: start;
-      background-size: 150px 30px;
-      background-repeat: no-repeat;
     }
 
     .nav {
@@ -87,12 +111,13 @@ header {
       border-bottom: 1px solid rgba(0, 0, 0, .1);
       transition: .2s linear;
       clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+      z-index: 999;
 
       &.active {
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
       }
 
-      .course-color {
+      .active {
         background: #fff;
         color: $text-grey;
         box-shadow: none;
@@ -101,16 +126,12 @@ header {
       a {
         display: block;
         width: 100%;
-        margin: 20px;
+        margin-top: 1.5rem;
         text-align: center;
       }
 
-      .fa-times {
-        transform: rotate(180deg);
-      }
-
-      .full-mb {
-        height: 100vh;
+      .profile {
+        margin-bottom: 100%;
       }
     }
   }
