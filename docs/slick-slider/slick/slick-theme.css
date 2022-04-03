@@ -24,9 +24,9 @@
     position: absolute;
     top: 30%;
     display: block;
+    z-index: 999;
     width: 30px;
     height: 30px;
-    z-index: 999;
     padding: 0;
     -webkit-transform: translate(0, -50%);
     -ms-transform: translate(0, -50%);
@@ -35,7 +35,7 @@
     color: transparent;
     border: none;
     outline: none;
-    background: transparent;
+    background: #fff;
 }
 .slick-prev:hover,
 .slick-prev:focus,
@@ -44,7 +44,7 @@
 {
     color: transparent;
     outline: none;
-    background: transparent;
+    background: #fff;
 }
 .slick-prev:hover:before,
 .slick-prev:focus:before,
@@ -193,7 +193,7 @@
     color: transparent;
     border: 0;
     outline: none;
-    background: transparent;
+    background: #111;
 }
 .slick-dots li button:hover,
 .slick-dots li button:focus

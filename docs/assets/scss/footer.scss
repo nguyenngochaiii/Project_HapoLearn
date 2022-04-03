@@ -29,7 +29,7 @@
 
   .second {
     width: 100%;
-    gap: 3rem;
+    gap: 2rem;
 
     a {
       color: #fff;
@@ -37,6 +37,7 @@
       padding: .7rem;
       line-height: 25px;
       font-weight: 600;
+      text-decoration: none;
     }
   }
 
@@ -88,6 +89,7 @@
   background: #454545;
   color: #fff;
   font-weight: 400;
+  padding: .5rem;
   font-size: .8rem;
   line-height: 18px;
   letter-spacing: -0.05em;
