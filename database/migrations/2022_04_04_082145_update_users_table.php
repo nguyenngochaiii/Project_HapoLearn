@@ -14,7 +14,6 @@ class UpdateUsersTable extends Migration
             $table->string('name')->nullable();
             $table->string('email')->unique()->nullable();
             $table->string('avatar')->nullable();
-            $table->timestamp('email_verified_at')->nullable();
             $table->string('password')->nullable();
             $table->string('description')->nullable();
             $table->timestamp('dob')->nullable();
@@ -25,6 +24,17 @@ class UpdateUsersTable extends Migration
 
     public function down()
     {
-        Schema::dropIfExists('users');
+        Schema::table('users', function (Blueprint $table) {
+            $table->dropColumn([
+                'user_id',
+                'username',
+                'name',
+                'email',
+                'avatar',
+                'password',
+                'description',
+                'dob',
+            ]);
+        });
     }
 }
