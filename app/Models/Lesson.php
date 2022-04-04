@@ -24,7 +24,7 @@ class Lesson extends Model
         return $this->belongsTo(Course::class, 'course_id', 'id');
     }
 
-    public function document()
+    public function documents()
     {
         return $this->hasMany(Document::class, 'lesson_id', 'id');
     }
