@@ -13,7 +13,6 @@ class Lesson extends Model
 
     protected $fillable = [
         'course_id',
-        'title',
         'content',
         'description',
         'time',
@@ -25,12 +24,12 @@ class Lesson extends Model
         return $this->belongsTo(Course::class, 'course_id', 'id');
     }
 
-    public function documents()
+    public function document()
     {
         return $this->hasMany(Document::class, 'lesson_id', 'id');
     }
 
-    public function users()
+    public function usersLesson()
     {
         return $this->belongsToMany(User::class, 'user_lesson', 'lesson_id', 'user_id');
     }

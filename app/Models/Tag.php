@@ -12,11 +12,12 @@ class Tag extends Model
     use SoftDeletes;
 
     protected $fillable = [
+        'tag_id',
         'name',
         'link',
     ];
 
-    public function courses()
+    public function courseTag()
     {
         return $this->belongsToMany(Course::class, 'course_tag', 'tag_id', 'course_id');
     }

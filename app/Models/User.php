@@ -25,7 +25,7 @@ class User extends Authenticatable
         'username',
         'role',
         'avatar',
-        'birthday',
+        'dob',
         'description',
     ];
 
@@ -35,8 +35,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $hidden = [
-        'password',
-        'remember_token',
+        'password'
     ];
 
     /**
@@ -48,12 +47,12 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
-    public function teacherCourses()
+    public function teacherCourse()
     {
         return $this->belongsToMany(Course::class, 'teacher_course', 'user_id', 'course_id');
     }
 
-    public function courses()
+    public function userCourse()
     {
         return $this->belongsToMany(Course::class, 'user_course', 'user_id', 'course_id');
     }
@@ -63,7 +62,7 @@ class User extends Authenticatable
         return $this->hasMany(Review::class, 'user_id');
     }
 
-    public function lessons()
+    public function userLesson()
     {
         return $this->belongsToMany(Lesson::class, 'user_lesson', 'user_id', 'lesson_id');
     }

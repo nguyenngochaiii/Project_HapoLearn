@@ -18,16 +18,16 @@ class Course extends Model
         'price',
     ];
 
-    public function teachers()
+    public function teacherCourse()
     {
         return $this->belongsToMany(User::class, 'teacher_course', 'course_id', 'user_id');
     }
 
-    public function users()
+    public function userCourse()
     {
         return $this->belongsToMany(User::class, 'user_course', 'course_id', 'user_id');
     }
-    public function tags()
+    public function courseTag()
     {
         return $this->belongsToMany(Tag::class, 'course_tag', 'course_id', 'tag_id');
     }
@@ -37,7 +37,7 @@ class Course extends Model
         return $this->hasMany(Review::class, 'course_id', 'id');
     }
 
-    public function lessons()
+    public function lesson()
     {
         return $this->hasMany(Lesson::class, 'course_id', 'id');
     }

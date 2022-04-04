@@ -14,7 +14,6 @@ class Document extends Model
     protected $fillable = [
         'lesson_id',
         'name',
-        'thumbnail',
         'type',
         'link',
     ];
