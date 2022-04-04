@@ -18,7 +18,7 @@ class Document extends Model
         'link',
     ];
 
-    public function lesson()
+    public function lessons()
     {
         return $this->belongsTo(Lesson::class, 'lesson_id');
     }

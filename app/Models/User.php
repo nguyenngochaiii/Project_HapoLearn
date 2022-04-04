@@ -52,7 +52,7 @@ class User extends Authenticatable
         return $this->belongsToMany(Course::class, 'teacher_course', 'user_id', 'course_id');
     }
 
-    public function userCourse()
+    public function courses()
     {
         return $this->belongsToMany(Course::class, 'user_course', 'user_id', 'course_id');
     }
@@ -62,7 +62,7 @@ class User extends Authenticatable
         return $this->hasMany(Review::class, 'user_id');
     }
 
-    public function userLesson()
+    public function lessons()
     {
         return $this->belongsToMany(Lesson::class, 'user_lesson', 'user_id', 'lesson_id');
     }

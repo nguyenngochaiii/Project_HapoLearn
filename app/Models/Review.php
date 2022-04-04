@@ -18,12 +18,12 @@ class Review extends Model
         'vote',
     ];
 
-    public function user()
+    public function users()
     {
         return $this->belongsTo(User::class, 'user_id');
     }
 
-    public function course()
+    public function courses()
     {
         return $this->belongsTo(Course::class, 'course_id', 'id');
     }

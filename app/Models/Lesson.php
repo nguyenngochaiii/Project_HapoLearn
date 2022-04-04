@@ -19,7 +19,7 @@ class Lesson extends Model
         'requirements'
     ];
 
-    public function course()
+    public function courses()
     {
         return $this->belongsTo(Course::class, 'course_id', 'id');
     }
@@ -29,7 +29,7 @@ class Lesson extends Model
         return $this->hasMany(Document::class, 'lesson_id', 'id');
     }
 
-    public function usersLesson()
+    public function lessons()
     {
         return $this->belongsToMany(User::class, 'user_lesson', 'lesson_id', 'user_id');
     }
